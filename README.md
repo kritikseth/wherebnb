@@ -7,5 +7,6 @@ This repository contains only the backend functions of [wherebnb.](https://where
 
 If you want to have a look at all the files, contact me.
 
-![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb-card-image.png)
+This dataset can also be found on kaggle here- [U.S. Airbnb Open Data](https://www.kaggle.com/kritikseth/us-airbnb-open-data)
 
+![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb-card-image.png)
