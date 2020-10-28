@@ -11,7 +11,7 @@ Wherebnb is an application that uses machine learning in the backend and provide
 <!-- This repository contains only the backend functions of [wherebnb.](https://wherebnb.herokuapp.com/) web application. Many of the files have been hidden in order to make this difficult to reproduce without my consent.
 If you want to have a look at all the files, contact me. -->
 
-#### How to use wherebnb.
+#### Installation of wherebnb.
 
 1. In your command prompt or terminal run
 ```
