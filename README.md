@@ -30,4 +30,23 @@ python3 app.py
 
 This dataset can also be found on **kaggle** here- [U.S. Airbnb Open Data](https://www.kaggle.com/kritikseth/us-airbnb-open-data)
 
+**Home Page**
+
 ![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb-card-image.png)
+
+**Price Prediction**
+
+![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb_product_display_1.png)
+
+**Popularity Prediction**
+
+![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb_product_display_2.png)
+
+**Map**
+
+![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb_product_display_3.png)
+
+**Nearby Experiences**
+
+![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb_product_display_4.png)
+
