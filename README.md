@@ -11,7 +11,7 @@ Wherebnb is an application that uses machine learning in the backend and provide
 <!-- This repository contains only the backend functions of [wherebnb.](https://wherebnb.herokuapp.com/) web application. Many of the files have been hidden in order to make this difficult to reproduce without my consent.
 If you want to have a look at all the files, contact me. -->
 
-#### Installation of wherebnb.
+### Installation of wherebnb.
 
 1. In your command prompt or terminal run
 ```
@@ -27,7 +27,7 @@ pip3 install -r requirements.txt --user
 python3 app.py
 ```
 
-#### Directory
+### Directory
 ```
 ├── app.py
 ├── mapping.py
@@ -88,12 +88,28 @@ python3 app.py
 └── README.md
 ```
 
-#### Bug/Feature Request
+### Technologies Used
+
+![](https://forthebadge.com/images/badges/made-with-python.svg)
+
+[<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width=150>](https://scikit-learn.org/stable/) [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=180>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=180>](https://gunicorn.org)
+
+[<img target="_blank" src="https://lightgbm.readthedocs.io/en/latest/_images/LightGBM_logo_black_text.svg" width=180>](https://lightgbm.readthedocs.io/en/latest/) 
+
+
+[<img target="_blank" src="https://joblib.readthedocs.io/en/latest/_static/joblib_logo.svg" width=120>](https://joblib.readthedocs.io/en/latest/) [<img target="_blank" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_bf0fb4cb7fe948c42f37ded73895638f/salesforce-heroku.png" width=180>](https://www.heroku.com/)[<img target="_blank" src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png" width=100>](https://jquery.com/)
+
+### Made by
+[![Kritik Seth](https://avatars2.githubusercontent.com/u/39276404?s=460&u=fa82c2a3cbf3454758cafdc9e834745f1434b802&v=4)](https://kritikseth.github.io/) |
+-|
+[Kritik Seth](https://kritikseth.github.io/) |)
+
+### Bug/Feature Request
 * If you find a bug (the website couldn't handle the query and/or gave undesired results), kindly open an issue [here](https://github.com/kritikseth/wherebnb/issues/new) by including your search query and the expected result.
 * If you'd like to request a new function, feel free to do so by opening an issue [here](https://github.com/kritikseth/wherebnb/issues/new). Please include sample queries and their corresponding results.
 
 
-#### License
+### License
 [![Apache license](https://img.shields.io/badge/license-apache-blue?style=for-the-badge&logo=appveyor)](http://www.apache.org/licenses/LICENSE-2.0e)
 
 Copyright 2020 Kritik Seth
@@ -109,10 +125,6 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific la
 
-#### Made by
-[![Kritik Seth](https://avatars2.githubusercontent.com/u/39276404?s=460&u=fa82c2a3cbf3454758cafdc9e834745f1434b802&v=4)](https://kritikseth.github.io/) |
--|
-[Kritik Seth](https://kritikseth.github.io/) |)
 
 This dataset can also be found on **kaggle** here- [U.S. Airbnb Open Data](https://www.kaggle.com/kritikseth/us-airbnb-open-data)
 
