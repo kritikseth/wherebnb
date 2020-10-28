@@ -109,6 +109,10 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific la
 
+#### Made by
+[![Kritik Seth](https://avatars2.githubusercontent.com/u/39276404?s=460&u=fa82c2a3cbf3454758cafdc9e834745f1434b802&v=4)](https://kritikseth.github.io/) |
+-|
+[Kritik Seth](https://kritikseth.github.io/) |)
 
 This dataset can also be found on **kaggle** here- [U.S. Airbnb Open Data](https://www.kaggle.com/kritikseth/us-airbnb-open-data)
 
