@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<br><br><br><br><br><br><br><br>
+<div class="section bg-primary pt-0 section-lg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4 mb-6 mb-md-5">
+                <div class="profile-card mb-5">
+                    <div class="card bg-primary shadow-soft border-light">
+                        <div class="card-header">
+                            <div class="profile-image bg-primary shadow-inset border border-light rounded mx-auto p-3 mt-n6">
+                                <img src="{{ url_for('static',filename='/img/profile/Kritik.jpeg') }}" class="card-img-top rounded" alt="Kritik Seth">
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="h5 mb-2">Kritik Seth</h3>
+                            <span class="h6 font-weight-normal text-gray mb-3">Aspiring Data Scientist</span>
+                            <ul class="list-unstyled d-flex my-3">
+                                <li>
+                                    <a href="https://www.linkedin.com/in/kritikseth/" target="_blank" aria-label="facebook social link" class="icon icon-xs icon-facebook mr-3">
+                                        <span class="fab fa-linkedin"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/kritikseth" target="_blank" aria-label="twitter social link" class="icon icon-xs icon-twitter mr-3">
+                                        <span class="fab fa-github"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.kaggle.com/kritikseth" target="_blank" aria-label="slack social link" class="icon icon-xs icon-slack mr-3">
+                                        <span class="fab fa-kaggle"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://medium.com/@kritikseth" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble mr-3">
+                                        <span class="fab fa-medium"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:sethkritik@gmail.com" target="_blank" aria-label="dribbble social link" class="icon icon-xs icon-dribbble mr-3">
+                                        <span class="fas fa-envelope"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="card-text">Hi, my name is Kritik Seth and I am a data science enthusiast based in Mumbai, India. I am currently pursuing BTech Data Science from MPSTME, NMIMS and will graduate in the year 2022.</p>
+                            <a href="https://kritikseth.github.io/" target="_blank" class="btn btn-primary btn-sm">View my Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-10">
+                <div class="alert alert-secondary alert-dismissible shadow-soft fade show" role="alert">
+                    <span class="alert-inner--icon"><span class="far fa-handshake"></span></span>
+                    <span class="alert-inner--text"> I am currently looking for new opportunities (remote as well as on-site). Whether you have a question or just want to say hi, my inbox is always open!</span>
+                    <button type="button" class="close text-dark" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br>
+{% endblock %}
+
