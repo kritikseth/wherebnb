@@ -110,7 +110,7 @@ python3 app.py
 
 
 ### License
-[![Apache license](https://img.shields.io/badge/license-apache-blue?style=for-the-badge&logo=appveyor)](http://www.apache.org/licenses/LICENSE-2.0e)
+[![Apache license](https://img.shields.io/badge/license-apache-blue?style=for-the-badge&logo=appveyor)](https://www.apache.org/licenses/LICENSE-2.0)
 
 Copyright 2020 Kritik Seth
 
