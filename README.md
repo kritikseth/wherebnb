@@ -22,7 +22,7 @@ git clone https://github.com/kritikseth/wherebnb.git
 ```
 pip3 install -r requirements.txt --user
 ```
-3. Run application
+3. Run the application
 ```
 python3 app.py
 ```
