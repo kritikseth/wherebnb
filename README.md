@@ -128,6 +128,7 @@ See the License for the specific la
 ### Dataset
 This dataset can also be found on **kaggle** here- [U.S. Airbnb Open Data](https://www.kaggle.com/kritikseth/us-airbnb-open-data)
 
+### Product Images
 **Home Page**
 
 ![](https://raw.githubusercontent.com/kritikseth/wherebnb/main/hosted/wherebnb-card-image.png)
