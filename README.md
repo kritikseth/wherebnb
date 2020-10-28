@@ -27,6 +27,66 @@ pip3 install -r requirements.txt --user
 python3 app.py
 ```
 
+#### Directory
+```
+├── app.py
+├── mapping.py
+├── preprocess.py
+├── templates 
+│   ├── about.html
+│   ├── base.html
+│   ├── child.html
+│   ├── data.html
+│   ├── host.html
+│   ├── index.html
+│   ├── map.html
+│   ├── nearby.html
+│   ├── mapnearbyview.html
+│   ├── mapview.html
+│   ├── nearby.html
+│   ├── nearbyview.html
+│   ├── popularity.html
+│   ├── popularityresult.html
+│   ├── price.html
+│   ├── priceresult.html
+│   └── tourist.html
+├── static
+│   ├── css
+│   │   ├── neumorphism.css
+│   │   └── neumorphism.css.map
+│   ├── data
+│   │   ├── wherebnb-map-1000.csv
+│   │   └── wherebnb-map-2000.csv
+│   ├── img
+│   │   ├── brand
+│   │   │   ├── ...
+│   │   ├── loading
+│   │   │   ├── ...
+│   │   └── profile
+│   │   │   ├── ...
+│   ├── js
+│   │   ├── neumorphism.js
+│   ├── models
+│   │   ├── [generated maps]
+│   ├── models
+│   │   ├── decision_tree_clf.pkl
+│   │   ├── lgbm.pkl
+│   │   └── lgbm_all.pkl
+│   ├── scss
+│   │   ├── bootstrap
+│   │   │   ├── ...
+│   │   ├── neumorphism
+│   │   │   ├── ...
+│   │   └── neumorphism.scss
+│   └── vendor
+│   │   ├── ...
+├── processing
+│   ├── __init__.py
+├── requirements.txt
+├── LICENSE
+├── Procfile
+└── README.md
+```
 
 This dataset can also be found on **kaggle** here- [U.S. Airbnb Open Data](https://www.kaggle.com/kritikseth/us-airbnb-open-data)
 
