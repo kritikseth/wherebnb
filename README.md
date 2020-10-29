@@ -96,7 +96,7 @@ python3 app.py
 [<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width=150>](https://scikit-learn.org/stable/) [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=180>](https://flask.palletsprojects.com/en/1.1.x/) [<img target="_blank" src="https://number1.co.za/wp-content/uploads/2017/10/gunicorn_logo-300x85.png" width=180>](https://gunicorn.org)
 
 [<img target="_blank" src="https://lightgbm.readthedocs.io/en/latest/_images/LightGBM_logo_black_text.svg" width=180>](https://lightgbm.readthedocs.io/en/latest/) 
-
+[<img target="_blank" src="https://www.tableau.com/sites/default/files/pages/tableau_cmyk_2015.png" width=200>](https://www.tableau.com/) 
 
 [<img target="_blank" src="https://joblib.readthedocs.io/en/latest/_static/joblib_logo.svg" width=120>](https://joblib.readthedocs.io/en/latest/) [<img target="_blank" src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_bf0fb4cb7fe948c42f37ded73895638f/salesforce-heroku.png" width=180>](https://www.heroku.com/)[<img target="_blank" src="https://openjsf.org/wp-content/uploads/sites/84/2019/10/jquery-logo-vertical_large_square.png" width=100>](https://jquery.com/)
 
