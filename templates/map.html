@@ -1,0 +1,44 @@
+{% extends 'child.html' %}
+
+
+{% block type %}
+<h5><strong>{{customer}}</strong></h5>
+{% endblock %}
+
+
+{% block action %}
+<h5>Map</h5>
+{% endblock %}
+
+
+{% block main %}
+<div class="section section-lg pt-0">
+    <form action="/tourist/map/view" method="POST" class="map_form" id="input_val">
+        <div class="col-12">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="form-group">
+                        <label class="h6 font-weight-light text-gray" for="subscribeInputEmail">Select a city</label>
+                        <div class="d-flex flex-row justify-content-center">
+                            <select name="city" class="custom-select my-1 mr-sm-2" required>
+                                <option value="">Select</option>
+                                {% for key, value in city_dict.items() %}
+                                    <option value="{{key}}">
+                                    {{value}}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                            <div class="input-group-prepend">
+                                <button type="submit" class="btn btn-primary rounded-right" id="myButton1">Submit</button>
+                                <div class="loadshow"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<br><br>
+<br><br>
+{% endblock %}

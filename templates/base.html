@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head> 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-353L6Z12NT"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-353L6Z12NT');
+        </script>
+
+        <!-- Primary Meta Tags -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Kritik Seth">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="title" content="wherebnb.">
+        <meta name="author" content="Kritik Seth">
+        <link rel="icon" href="{{ url_for('static',filename='/img/brand/w_icon.png') }}">
+
+        <!--  Social tags -->
+        <meta name="keywords" content="wherebnb, airbnb, inside airbnb, kaggle, kritik, kritik seth, flask, python, machine learning, heroku, prediction, nlp, deep learning, ai, ml">
+        <meta name="description" content="Wherebnb (Airbnb clone) made by Kritik Seth not only helps tourists to predict the price of a house but also helps hosts to predict the popularity of their house while giving them a title recommendation for their place as well.">
+
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="Wherebnb a student project which predicts the price and popularity of your house!">
+        <meta itemprop="description" content="Wherebnb (Airbnb clone) made by Kritik Seth not only helps tourists to predict the price of a house but also helps hosts to predict the popularity of their house while giving them a title recommendation for their place as well.">
+        <meta itemprop="image" content="https://raw.githubusercontent.com/kritikseth/Wherebnb/main/hosted/wherebnb-card-image.png">
+
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@kritik_seth">
+        <meta name="twitter:title" content="Wherebnb a student project which predicts the price and popularity of your house!">
+        <meta name="twitter:description" content="Wherebnb (Airbnb clone) made by Kritik Seth not only helps tourists to predict the price of a house but also helps hosts to predict the popularity of their house while giving them a title recommendation for their place as well.">
+        <meta name="twitter:creator" content="@kritik_seth">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/kritikseth/Wherebnb/main/hosted/wherebnb-card-image.png">
+
+        <!-- Open Graph data -->
+        <meta property="og:title" content="Wherebnb a student project which predicts the price and popularity of your house!" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://wherebnb.herokuapp.com/" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/kritikseth/Wherebnb/main/hosted/wherebnb-card-image.png"/>
+        <meta property="og:description" content="Wherebnb (Airbnb clone) made by Kritik Seth not only helps tourists to predict the price of a house but also helps hosts to predict the popularity of their house while giving them a title recommendation for their place as well." />
+        <meta property="og:site_name" content="wherebnb." />
+
+        <!-- Favicon -->
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="theme-color" content="#ffffff">
+
+        <!-- Fontawesome -->
+        <link type="text/css" href="{{ url_for('static',filename='vendor/fontawesome/css/all.min.css') }}" rel="stylesheet">
+
+        <!-- Pixel CSS -->
+        <link type="text/css" href="{{ url_for('static',filename='/css/neumorphism.css') }}" rel="stylesheet">
+
+        <title>{{title}}wherebnb.</title>
+    </head>
+    
+    <body>
+        <header class="header-global">
+            <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
+                <div class="container position-relative">
+                    <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4" href="https://kritikseth.github.io/" target="_blank">
+                        <img class="navbar-brand-dark" src="{{ url_for('static',filename='/img/profile/kritik_logo.svg') }}" alt="Kritik Seth">
+                        <img class="navbar-brand-light" src="{{ url_for('static',filename='/img/profile/kritik_logo.svg') }}" alt="Kritik Seth">
+                    </a>
+                    <div class="navbar-collapse collapse" id="navbar_global">
+                        <div class="navbar-collapse-header">
+                            <div class="row">
+                                <div class="col-6 collapse-brand">
+                                    <a href="https://kritikseth.github.io/" target="_blank" class="navbar-brand shadow-soft py-2 px-3 rounded border border-light">
+                                        <img src="{{ url_for('static',filename='/img/profile/kritik_logo.svg') }}" alt="Kritik Seth">
+                                    </a>
+                                </div>
+                                <div class="col-6 collapse-close">
+                                    <a href="#navbar_global" class="fas fa-times" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" title="close" aria-label="Toggle navigation"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link" >
+                                    <span class="nav-link-inner-text">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link" data-toggle="dropdown" >
+                                    <span class="nav-link-inner-text">Tourist</span>
+                                    <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg">
+                                <div class="col-auto px-0" data-dropdown-content>
+                                    <div class="list-group list-group-flush">
+                                        <a href="/tourist" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fas fa-plane-departure"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Tourist</span>
+                                            </div>
+                                        </a>
+                                        <a href="/tourist/price" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fas fa-rupee-sign"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Price Prediction</span>
+                                            </div>
+                                        </a>
+                                        <a href="/tourist/map" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fa fa-map"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">View Map</span>
+                                            </div>
+                                        </a>
+                                        <a href="/tourist/nearby" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fa fa-map-pin"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Nearby Experiences</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/" class="nav-link" data-toggle="dropdown" >
+                                    <span class="nav-link-inner-text">Host</span>
+                                    <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg">
+                                <div class="col-auto px-0" data-dropdown-content>
+                                    <div class="list-group list-group-flush">
+                                        <a href="/host" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fa fa-bed"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Host</span>
+                                            </div>
+                                        </a>
+                                        <a href="/host/price" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fas fa-rupee-sign"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Smart Price Estimation</span>
+                                            </div>
+                                        </a>
+                                        <a href="/host/popularity" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fas fa-chart-line"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Popularity Estimation</span>
+                                            </div>
+                                        </a>
+                                        <a href="/host/map" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fas fa-map-marked-alt"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Map and Places</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                            <span class="icon icon-sm icon-secondary"><span class="fas fa-spell-check"></span></span>
+                                            <div class="ml-4">
+                                                <span class="text-dark d-block">Title Recommendation<span class="badge badge-sm badge-secondary ml-2">Coming Soon</span></span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/data" class="nav-link">
+                                    <span class="nav-link-inner-text">Data</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="/about" class="nav-link">
+                                    <span class="nav-link-inner-text">About Me</span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                    <span class="nav-link-inner-text">Contact Me</span>
+                                    <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-lg">
+                                    <div class="col-auto px-0" data-dropdown-content>
+                                        <div class="list-group list-group-flush">
+                                            <a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-secondary"><span class="fab fa-linkedin"></span></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">LinkedIn<span class="badge badge-sm badge-secondary ml-2">Connect</span></span>
+                                                </div>
+                                            </a>
+                                            <a href="https://github.com/kritikseth" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-secondary"><span class="fab fa-github"></span></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">GitHub<span class="badge badge-sm badge-secondary ml-2">Follow</span></span>
+                                                </div>
+                                            </a>
+                                            <a href="https://www.kaggle.com/kritikseth" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-secondary"><span class="fab fa-kaggle"></span></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">Kaggle<span class="badge badge-sm badge-secondary ml-2">Follow</span></span>
+                                                </div>
+                                            </a>
+                                            <a href="https://medium.com/@kritikseth" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-secondary"><span class="fab fa-medium"></span></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">Medium<span class="badge badge-sm badge-secondary ml-2">Read</span></span>
+                                                </div>
+                                            </a>
+                                            <a href="mailto:sethkritik@gmail.com" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-secondary"><span class="fas fa-envelope"></span></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">Email<span class="badge badge-sm badge-secondary ml-2">Mail</span></span>
+                                                </div>
+                                            </a>
+                                            <a href="https://github.com/kritikseth/wherebnb" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-secondary"><span class="fab fa-github"></span></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">Project<span class="badge badge-sm badge-secondary ml-2">Repository</span></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        {% block customer %}{% endblock %}
+                        <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        {% block body%}{% endblock %}
+
+        <footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <p><strong>Kritik Seth</strong> Data Scientist</p>
+                        <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+                            <li class="mr-2">
+                                <a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="linkedin social link"
+                                data-toggle="tooltip" data-placement="top" title="Connect with me on LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="https://github.com/kritikseth" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="github social link"
+                                data-toggle="tooltip" data-placement="top" title="Follow me on GitHub">
+                                    <span aria-hidden="true" class="fab fa-github"></span>
+                                </a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="https://www.kaggle.com/kritikseth" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="kaggle social link"
+                                data-toggle="tooltip" data-placement="top" title="View my Kaggle Profile">
+                                    <i aria-hidden="true" class="fab fa-kaggle"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://medium.com/@kritikseth" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="medium social link"
+                                data-toggle="tooltip" data-placement="top" title="Read my articles on Medium">
+                                    <i aria-hidden="true" class="fab fa-medium"></i>
+                                </a>
+                            </li>
+                            <li class="mr-2">
+                                <a href="mailto:sethkritik@gmail.com" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="mail link"
+                                data-toggle="tooltip" data-placement="top" title="Mail me here">
+                                    <i aria-hidden="true" class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="my-5">
+            </div>
+        </footer>
+        
+        <!-- Core -->
+        <script src="{{ url_for('static',filename='/vendor/jquery/dist/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/popper.js/dist/umd/popper.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/headroom.js/dist/headroom.min.js') }}"></script>
+
+        <!-- Vendor JS -->
+        <script src="{{ url_for('static',filename='/vendor/onscreen/dist/on-screen.umd.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/nouislider/distribute/nouislider.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/jarallax/dist/jarallax.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/jquery.counterup/jquery.counterup.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/jquery-countdown/dist/jquery.countdown.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js') }}"></script>
+        <script src="{{ url_for('static',filename='/vendor/prismjs/prism.js') }}"></script>
+        
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+        <!-- Neumorphism JS -->
+        <script src="{{ url_for('static',filename='/js/neumorphism.js') }}"></script>
+
+        <!-- Loading Screen -->
+        
+
+        
+
+        <script>
+            $('#input_val').submit(function() {
+                document.getElementById("loadingDiv").style.display = 'block';
+                $('#loadingDiv').show(); 
+            });
+        </script>
+    </body>
+
+</html>
