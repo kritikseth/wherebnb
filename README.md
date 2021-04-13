@@ -1,5 +1,5 @@
 <a href="https://wherebnb.herokuapp.com/" target="_blank"><h1 style="color:#0056B3">wherebnb.</h1></a>
-<h3>made by- Kritik Seth, Jayesh Singh</h3>
+<h3>made by- Kritik Seth</h3>
 
 Wherebnb is an application that uses machine learning in the backend and provides:
 
