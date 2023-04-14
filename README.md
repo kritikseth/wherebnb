@@ -101,7 +101,7 @@ python3 app.py
 ### Made by
 [![Kritik Seth](https://avatars2.githubusercontent.com/u/39276404?s=460&u=fa82c2a3cbf3454758cafdc9e834745f1434b802&v=4)](https://kritikseth.github.io/) |
 -|
-[Kritik Seth](https://kritikseth.github.io/) |)
+[Kritik Seth](https://www.kritikseth.com/) |)
 
 ### Bug/Feature Request
 * If you find a bug (the website couldn't handle the query and/or gave undesired results), kindly open an issue [here](https://github.com/kritikseth/wherebnb/issues/new) by including your search query and the expected result.
