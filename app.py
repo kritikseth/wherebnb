@@ -61,7 +61,7 @@ def touristmap():
     return render_template('map.html', title=session['title'], customer=session['customer'], city_dict=mp.id_city_dict)
 
 
-@app.route('/tourist/map/view', methods=['GET', 'POST'])
+@app.route('/tourist/mapview', methods=['GET', 'POST'])
 def touristmapview():
     session['title'] = 'map - '
     session['customer'] = 'tourist'
@@ -94,7 +94,7 @@ def touristnearby():
     return render_template('nearby.html', title=session['title'], customer=session['customer'], city_dict=mp.id_city_dict)
 
 
-@app.route('/tourist/nearby/result', methods=['GET', 'POST'])
+@app.route('/tourist/nearbyresult', methods=['GET', 'POST'])
 def touristnearbyresult():
     session['title'] = 'nearby - '
     session['customer'] = 'tourist'
@@ -164,7 +164,7 @@ def hostmap():
     return render_template('mapnearby.html', title=session['title'], customer=session['customer'], city_dict=mp.id_city_dict)
 
 
-@app.route('/host/map/view', methods=['GET', 'POST'])
+@app.route('/host/mapview', methods=['GET', 'POST'])
 def hostmapview():
 
     session['title'] = 'map - '
@@ -201,8 +201,9 @@ def pricepredict():
         session['form_data'] = form_data
 
         CityId = int(form_data['city'])
-        pred = pre.regressor(form_data, CityId, reg)
-        pred_total = pred*(int(form_data['minimum_nights']))
+        predict = pre.regressor(form_data, CityId, reg)
+        predict = '$ ' + str(predict) + ' / night'
+        print(form_data)
         
         map = pre.make_map(df, CityId)
         map.save('static/maps/map.html')
@@ -211,7 +212,7 @@ def pricepredict():
                            popularity_dict=mp.id_pop_dict, form_data=form_data, city=mp.id_city_dict[int(form_data['city'])],
                            popu=mp.id_pop_dict[int(form_data['popularity'][0])], room_type_dict=mp.id_room_type_dict,
                            roomt=mp.id_room_type_dict[int(form_data['room_type'][0])], current_time=int(time.time()),
-                           link=mp.nearby_id_link_dict[CityId], label=mp.nearby_id_name_dict[CityId], pred=pred, pred_total=pred_total)
+                           link=mp.nearby_id_link_dict[CityId], label=mp.nearby_id_name_dict[CityId], predicted=predict)
 
 
 @app.route('/data')
@@ -222,4 +223,4 @@ def data():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

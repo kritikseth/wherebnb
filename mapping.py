@@ -3,14 +3,14 @@ city_id_dict = {'Asheville': 0, 'Austin': 1, 'Boston': 2, 'Broward County': 3, '
                 'Los Angeles': 10, 'Nashville': 11, 'New Orleans': 12, 'New York City': 13,
                 'Oakland': 14, 'Pacific Grove': 15, 'Portland': 16, 'Rhode Island': 17, 'Salem': 18,
                 'San Diego': 19, 'San Francisco': 20, 'San Mateo County': 21,
-                'San Clara Country': 22, 'Santa Cruz County': 23, 'Seattle': 24,
+                'Santa Clara County': 22, 'Santa Cruz County': 23, 'Seattle': 24,
                 'Twin Cities MSA': 25, 'Washington D.C.': 26}
 
 id_city_dict = {0: 'Asheville', 1: 'Austin', 2: 'Boston', 3: 'Broward County', 4: 'Cambridge',
                 5: 'Chicago', 6: 'Clark County', 7: 'Columbus', 8: 'Denver', 9: 'Jersey City',
                 10: 'Los Angeles', 11: 'Nashville', 12: 'New Orleans', 13: 'New York City',
                 14: 'Oakland', 15: 'Pacific Grove', 16: 'Portland', 17: 'Rhode Island', 18: 'Salem',
-                19: 'San Diego', 20: 'San Francisco', 21: 'San Mateo County', 22: 'San Clara Country',
+                19: 'San Diego', 20: 'San Francisco', 21: 'San Mateo County', 22: 'Santa Clara County',
                 23: 'Santa Cruz County', 24: 'Seattle',
                 25: 'Twin Cities MSA', 26: 'Washington D.C.'}
 

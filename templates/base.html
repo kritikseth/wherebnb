@@ -60,10 +60,19 @@
     </head>
     
     <body>
+
+        <div style="z-index: 5000; display:none;" id="loadingDiv">
+            <table style="margin: 0px auto;">
+                <tr>
+                    <td style="padding-top:200px; text-align:center; vertical-align: middle;"><img src="{{ url_for('static',filename='/img/loading/infiloading.gif') }}" alt="Loading"/></td>
+                </tr>
+            </table>
+        </div>
+
         <header class="header-global">
             <nav id="navbar-main" aria-label="Primary navigation" class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary">
                 <div class="container position-relative">
-                    <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4" href="https://kritikseth.github.io/" target="_blank">
+                    <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light mr-lg-4" href="#">
                         <img class="navbar-brand-dark" src="{{ url_for('static',filename='/img/profile/kritik_logo.svg') }}" alt="Kritik Seth">
                         <img class="navbar-brand-light" src="{{ url_for('static',filename='/img/profile/kritik_logo.svg') }}" alt="Kritik Seth">
                     </a>
@@ -71,7 +80,7 @@
                         <div class="navbar-collapse-header">
                             <div class="row">
                                 <div class="col-6 collapse-brand">
-                                    <a href="https://kritikseth.github.io/" target="_blank" class="navbar-brand shadow-soft py-2 px-3 rounded border border-light">
+                                    <a href="/index" class="navbar-brand shadow-soft py-2 px-3 rounded border border-light">
                                         <img src="{{ url_for('static',filename='/img/profile/kritik_logo.svg') }}" alt="Kritik Seth">
                                     </a>
                                 </div>
@@ -180,6 +189,12 @@
                                 <div class="dropdown-menu dropdown-menu-lg">
                                     <div class="col-auto px-0" data-dropdown-content>
                                         <div class="list-group list-group-flush">
+                                            <a href="https://www.kritikseth.com/" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-secondary"><span class="fab fa-wpforms"></span></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">Website<span class="badge badge-sm badge-secondary ml-2">Profile</span></span>
+                                                </div>
+                                            </a>
                                             <a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
                                                 <span class="icon icon-sm icon-secondary"><span class="fab fa-linkedin"></span></span>
                                                 <div class="ml-4">
@@ -240,6 +255,12 @@
                     <div class="col-lg-5">
                         <p><strong>Kritik Seth</strong> Data Scientist</p>
                         <ul class="d-flex list-unstyled mb-5 mb-lg-0">
+                            <li class="mr-2">
+                                <a href="https://www.kritikseth.com/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="linkedin social link"
+                                data-toggle="tooltip" data-placement="top" title="My Portfolio">
+                                    <i class="fab fa-wpforms"></i>
+                                </a>
+                            </li>
                             <li class="mr-2">
                                 <a href="https://www.linkedin.com/in/kritikseth/" target="_blank" class="btn btn-icon-only btn-pill btn-primary" aria-label="linkedin social link"
                                 data-toggle="tooltip" data-placement="top" title="Connect with me on LinkedIn">

@@ -61,8 +61,8 @@ def classifier(form_data, clf):
 
 def regressor(form_data, CityId, reg):
     
-    test = [int(form_data['room_type']), np.log1p(float(form_data['minimum_nights'])), float(form_data['number_of_reviews']),
-            np.sqrt(float(form_data['reviews_per_month'])), float(form_data['calculated_host_listings_count']),
+    test = [int(form_data['room_type']), float(form_data['minimum_nights']), float(form_data['number_of_reviews']),
+            float(form_data['reviews_per_month']), float(form_data['calculated_host_listings_count']),
             float(form_data['availability_365']), int(form_data['city']), float(form_data['popularity'])]
 
-    return int(round(np.expm1(list(reg.predict([test]))[0]), 0))
+    return int(round(list(reg.predict([test]))[0]))
