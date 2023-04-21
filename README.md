@@ -8,7 +8,7 @@ Wherebnb is an application that uses machine learning in the backend and provide
 * Users with a map of nearby places actually available for rent on Airbnb in the selected region.
 * Travellers with a list of nearby experiences in the selected city.
 
-#### Website Link- https://wherebnb.herokuapp.com/
+#### Website Link- http://wherebnb.kritikseth.com/
 <!-- This repository contains only the backend functions of [wherebnb.](https://wherebnb.herokuapp.com/) web application. Many of the files have been hidden in order to make this difficult to reproduce without my consent.
 If you want to have a look at all the files, contact me. -->
 
